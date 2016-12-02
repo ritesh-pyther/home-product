@@ -28,7 +28,7 @@ public class DataSourceConfig {
 //        dataSource.setUsername("postgres");
 //        dataSource.setPassword("smartant");
 
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/mahajan");
+        dataSource.setUrl("jdbc:postgresql://172.30.177.223:5432/mahajan");
         dataSource.setUsername("admin");
         dataSource.setPassword("smartant");
         dataSource.setMaxActive(100);
