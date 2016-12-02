@@ -24,10 +24,13 @@ public class DataSourceConfig {
         BasicDataSource dataSource = new BasicDataSource();
 
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/test123?useUnicode=true&characterEncoding=UTF-8");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("smartant");
+//        dataSource.setUrl("jdbc:postgresql://localhost:5432/test123?useUnicode=true&characterEncoding=UTF-8");
+//        dataSource.setUsername("postgres");
+//        dataSource.setPassword("smartant");
 
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/mahajan");
+        dataSource.setUsername("admin");
+        dataSource.setPassword("smartant");
         dataSource.setMaxActive(100);
         dataSource.setMaxIdle(30);
         dataSource.setMaxWait(2000);
