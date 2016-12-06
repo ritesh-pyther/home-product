@@ -23,8 +23,8 @@ public class Landing {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String list(Model model, HttpServletRequest request) {
         System.out.println("From landing controler");
-//        return "Auth/Login";
-        return "redirect:/Donors/";
+        return "Auth/Login";
+//        return "redirect:/Donors/";
     }
 
     @RequestMapping(value = "/Next", method = RequestMethod.GET)
