@@ -53,8 +53,8 @@ public class AuthController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String auth(Model model, HttpServletRequest request) {
         if (new SessionUtils().getSessionValue(request, "admin") != null) {
-//            return "Index/Index";
-            return "redirect:/Donors/";
+            return "Index/Index";
+//            return "redirect:/Donors/";
         } else {
             return "Auth/Login";
         }
